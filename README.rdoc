@@ -39,7 +39,7 @@ Then at the bottom we put in page links:
 
     <%= page_links(@products, @page) %>
 
-== Extras
+=== Extras
 
 As well as having a simple list of page numbers, there are four special or extra tags that can be used in the links: :first, :preview, :next, :last. The function of these should be reasonably self explanitory or you probably wouldn't be here.
 
