@@ -16,7 +16,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/intrica/simple_page"
   gem.license = "MIT"
   gem.summary = %Q{Active Record extension  and view helpers to give pagination abilities}
-  gem.description = %Q{TODO: Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
+  gem.description = %Q{Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
   gem.email = "david.monagle@intrica.com.au"
   gem.authors = ["David Monagle"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
