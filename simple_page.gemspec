@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Monagle"]
   s.date = %q{2011-05-09}
-  s.description = %q{TODO: Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
+  s.description = %q{Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
   s.email = %q{david.monagle@intrica.com.au}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/simple_page.rb",
     "lib/simple_page/active_record_extension.rb",
     "lib/simple_page/engine.rb",
+    "simple_page.gemspec",
     "test/helper.rb",
     "test/test_simple_page.rb"
   ]
