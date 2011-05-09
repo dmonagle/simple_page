@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "simple_page"
   gem.homepage = "http://github.com/intrica/simple_page"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Active Record extension  and view helpers to give pagination abilities}
+  gem.description = %Q{TODO: Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
   gem.email = "david.monagle@intrica.com.au"
   gem.authors = ["David Monagle"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -29,13 +29,6 @@ Jeweler::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
 end
