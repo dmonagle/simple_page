@@ -27,6 +27,17 @@ Note the following: Instead of the standard Product.all - which returns an array
 
 Lastly we do a normal respond with the @products scope. Very little change to a normal controller method really.
 
+=== Finding the page number for a known object
+
+Something that I need to do from time to time. Especially when somebody direct links to an object and the pages are displayed within the "show" action
+
+     @product = Product.find(params[:id])
+     @products = Product.where({})
+     @products.page_size = 10
+     @page = @products.find_page_number(@product)
+
+This is probably not the most wonderfully efficient thing to do, but it works. Feel free to contact me if you have a better method for implementing this than the one I've used.
+
 == In the Views
 
 In a view where all of the products would normally be displayed, we now only want to display the products from the selected page. This can be achieved as follows:
@@ -75,4 +86,5 @@ These helpers should be fairly self explanitory. Better yet you can easily imple
       end
     end
   end
+
 
