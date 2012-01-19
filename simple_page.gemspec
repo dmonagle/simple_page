@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{simple_page}
-  s.version = "3.0.4"
+  s.version = "3.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["David Monagle"]
-  s.date = %q{2011-05-09}
+  s.authors = [%q{David Monagle}]
+  s.date = %q{2012-01-19}
   s.description = %q{Extends Active Record to give pagination functions. Also supplies view helpers and generators to create customised pagination links.}
   s.email = %q{david.monagle@intrica.com.au}
   s.extra_rdoc_files = [
@@ -32,9 +32,9 @@ Gem::Specification.new do |s|
     "test/test_simple_page.rb"
   ]
   s.homepage = %q{http://github.com/intrica/simple_page}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.3}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{Active Record extension  and view helpers to give pagination abilities}
   s.test_files = [
     "test/helper.rb",
