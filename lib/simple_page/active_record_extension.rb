@@ -54,7 +54,7 @@ module SimplePageExtension
       numbers.uniq!
       numbers.sort!
       numbers.reject! { |number| !number.between?(1, self.page_count) }
-      returning [] do |results|
+      [].tap do |results|
         results << yield(:first, 1, []) if extras.include?(:first)
         results << yield(:previous, prev_page, []) if extras.include?(:previous)
         numbers.zip([nil]+numbers, numbers[1..-1]) do |number, prev_number, next_number|
